@@ -8,7 +8,7 @@ export const api = axios.create({
   timeout: 5000,
 });
 
-// Creating a mock instance
+// Initialize mock API with 500ms simulated network delay
 const mock = new MockAdapter(api, { delayResponse: 500 });
 
 // Mock GET request for gift cards
